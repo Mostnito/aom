@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+
+.text{
+    font-family: 'Mitr';
+    color: rgb(0, 255, 0);
+    font-size: 30px;
+}
+
+.btn{
+    font-family: 'Mitr';
+    color: rgb(15, 196, 84);
+    background: none;
+    border-radius: 5px;
+    border-color: rgb(20, 235, 66);
+    font-size: 25px;
+    transition: all 0.2s;
+}
+
+.btn:hover{
+    color: green;
+    padding: 3px;
+    border-color: rgb(16, 173, 113);
+    cursor: pointer;
+}
