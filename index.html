@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Aommi's Day</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <button id="play" class="btn">เปิดเพลง</button>
+        &nbsp;&nbsp;
+        <button id="stop" class="btn">หยุดเพลง</button>
+   <script>
+        let play = document.getElementById("play");
+        
+        let stop = document.getElementById("stop")
+
+        let audio = new Audio("assets/song.mp3");
+            function playMusic() {
+             audio.play()
+          }
+
+            function stopMusic(){
+                audio.pause()
+            }
+            audio.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+}, false);
+            stop.addEventListener("click", stopMusic)
+          play.addEventListener("click", playMusic);
+   </script>
+        <div id="app" class="text"></div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
