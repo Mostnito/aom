@@ -65,7 +65,7 @@ typewriter
     .pauseFor(1500)
     .callFunction(() => {
         var img = document.createElement("img");
-        img.src = "assets/Aom.JPG";
+        img.src = "assets/Aom.jpg";
         var src = document.getElementById("app");
         src.appendChild(img);
       })
